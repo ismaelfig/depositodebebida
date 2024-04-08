@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.menu button{
+    background-color:#007bff;
+    border: 2px solid #007bff;
+    border-radius:5px;
+    color:#fff;
+    margin:10px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.btn img {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+a.btn-registro {
+    background-color: #dc3545;
+}
+
+a.btn-vendidos {
+    background-color: #ffc107;
+}
+
+a.btn-estoque {
+    background-color: #007bff;
+}
+
+.container h1 {
+    margin-bottom: 2px;
+    color: #007bff;
+}
+
+.form-group input  {
+     border:2px solid #007bff;
+     width:50%;
+    
+}
+.form-group{
+    color:#007bff;
+    padding:5px;
+}
+
+.form-group select{
+    width: 50%;
+    padding: 8px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+}
+.form-group label{
+    padding:5px;
+}
+
+.container form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 576px) {
+    .btn {
+        display: block;
+        width: 100%;
+    }
+
+    .btn img {
+        margin-bottom: 0;
+    }
+}

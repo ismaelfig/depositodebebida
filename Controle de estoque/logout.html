@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Logout</title>
+    <link rel="stylesheet" href="logout.css">
+</head>
+<body>
+    
+    <div class="logout-container">
+        <div class="voltar">
+            <a href="produtos.php">Voltar</a>
+        </div>
+        <h1>Desconectar!!!</h1>
+        <p>Você está prestes a se desconectar.</p>
+        <p>Deseja realmente sair da sua conta?</p>
+        <button class="btn-logout" onclick="logout()">Desconectar</button>
+
+        <script>
+            function logout() {
+                // Realize as ações necessárias para efetuar o logout aqui
+                // Por exemplo, limpar os tokens de autenticação, redirecionar para a página de login, etc.
+                alert("Você foi desconectado da sua conta.");
+                window.location.href = "index.html"; // Redireciona para a página de login após o logout
+            }
+        </script>
+    </div>
+
+</body>
+</html>

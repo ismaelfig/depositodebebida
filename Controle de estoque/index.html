@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-pzjw8+6Rd5PaVIWl4kEL2jcjw8gFgI8+6D4lmC6DtmjA2qWxfq0kg0ar5Da8KS9H" crossorigin="anonymous">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var form = document.querySelector("form");
+        var passwordInput = form.querySelector('input[name="password"]');
+        var togglePasswordBtn = form.querySelector('.toggle-password');
+
+        togglePasswordBtn.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            togglePasswordBtn.innerHTML = '<i class="material-icons">visibility</i>';
+          } else {
+            passwordInput.type = "password";
+            togglePasswordBtn.innerHTML = '<i class="material-icons">visibility_off</i>';
+          }
+        });
+
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+    
+          var username = form.querySelector('input[name="username"]').value;
+          var password = form.querySelector('input[name="password"]').value;
+    
+          // Verifique as credenciais do usuário (você pode fazer uma chamada a uma API ou verificar localmente)
+    
+          if (username === "flavio" && password === "deposito2023") {
+            alert("Login bem-sucedido!");
+            window.location.href = "produtos.php"; // Exibe uma mensagem de sucesso
+            // Redireciona para outra página, se necessário
+          } else {
+            alert("Nome de usuário ou senha incorretos."); // Exibe uma mensagem de erro
+          }
+        });
+      });
+  </script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form>
+              <p>
+                <label>Usuário:</label><br>
+                <input type="text" name="username" class="form-control" placeholder="Usuário">
+              </p>
+              <p>
+                <label>Senha:</label><br>
+                <input type="password" name="password" class="form-control" placeholder="Senha">
+                <button class="toggle-password" type="button">
+                <i class="material-icons">visibility_off</i></button>
+              </p>
+                <button class="btn btn-entrar" type="submit">Entrar</button>
+            </form>   
+        </div>
+      <footer>
+      <p class="copyright">&copy; Copyright Iron Systems - 2023</p>
+      </footer>
+    </div>
+</body>
+</html>

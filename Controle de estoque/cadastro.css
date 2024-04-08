@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #545657;
+}
+.menu button{
+    background-color:#007bff;
+    border: 2px solid #007bff;
+    border-radius:5px;
+    color:#fff;
+    margin:10px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.btn img {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+.btn-vendidos {
+    background-color: #dc3545;
+}
+
+.btn-compras {
+    background-color: #ffc107;
+}
+
+.btn-estoque {
+    background-color: #007bff;
+}
+
+.container h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.container form {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.container form .form-label {
+    margin-bottom: 5px;
+}
+
+.container form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0056b3;
+    border-radius: 4px;
+}
+
+.container form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 576px) {
+    .btn {
+        display: block;
+        width: 100%;
+    }
+
+    .btn img {
+        margin-bottom: 0;
+    }
+}
